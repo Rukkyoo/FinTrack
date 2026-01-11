@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Finance Tracker (Frontend)
 
-## Getting Started
+This is the frontend application for a personal finance and expense tracking platform. It allows users to track income and expenses, manage categories, and visualize financial activity through a modern, dashboard-driven interface.
 
-First, run the development server:
+The application is built with **Next.js** and **TypeScript** and consumes a REST API secured with token-based authentication.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Features - Coming soon
+
+* User registration and login
+* JWT-based authentication
+* Protected routes and authenticated sessions
+* Dashboard overview of income, expenses, and balance
+* Create, update, and delete transactions
+* Filter transactions by category and type
+* Manage income and expense categories
+* Financial insights with charts and summaries
+* Multi-currency support
+
+---
+
+## Pages / Routes
+
+* `/landing` – Landing page
+* `/authentication` – User login and registration
+* `/dashboard` – Financial overview
+
+
+---
+
+## Tech Stack
+
+* Next.js (App Router)
+* TypeScript
+* Tailwind CSS
+* Axios
+* SWR for data fetching
+* Chart.js for data visualization
+
+---
+
+## API Integration
+
+The frontend communicates with a FastAPI backend.
+
+Base API URL:
+
+```
+https://api.siakpere.xyz
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Authentication is handled using bearer tokens. Protected requests must include:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+Authorization: Bearer <access_token>
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Goal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The goal of this project is to provide a simple, scalable, and user-friendly interface for managing personal finances, helping users understand spending patterns and make informed financial decisions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
